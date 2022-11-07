@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Feds - Incripcion Campeonato de España{% endblock %}
+
+{% block body %}
+{% include 'menu.html.twig' %}
+<div class="container text-center bg-white text-dark p-4">
+<h1 class="mb-5">Incripcion Campeonato de España</h1>
+<iframe src="{{ asset('build/pdf/NORMATIVA_GENERAL_DE_COMPETICION_22_23_OK_Anexos_arrastrado_3.pdf') }}" width="100%" height="900px">
+</iframe>
+</div>
+{% endblock %}
